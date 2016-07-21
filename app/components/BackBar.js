@@ -14,13 +14,14 @@ class BackBar extends Component {
 
   render() {
     return (
-      <TouchableOpacity 
-        onPress={(event) => this.props.navigator.pop() }
-        style={styles.backBarRow}>
-        <Icon name="chevron-left" size={20} style={styles.backBarChevron} />
+      <View style={styles.backBarRow}>
+        <TouchableOpacity
+          onPress={(event) => this.props.navigator.pop() }>
+          <Icon name="chevron-left" size={20} style={styles.backBarChevron} />
+        </TouchableOpacity>
         <View style={{flex: 1}} />
         <Text style={styles.backBarText}>{this.props.barTitle}</Text>
-      </TouchableOpacity>
+      </View>
     );
   }
 
@@ -33,18 +34,20 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     alignItems: "center",
     height: 50,
-    borderWidth: 1,
-    marginBottom: 15
+    marginBottom: 15,
+    borderColor: '#939e90'
   },
 
   backBarChevron: {
     marginLeft: 20,
-    marginRight: 20
+    marginRight: 20,
+    color: 'white'
   },
 
   backBarText: {
     marginRight: 100,
-    fontSize: 20
+    fontSize: 20,
+    color: 'white'
   },
 
 });

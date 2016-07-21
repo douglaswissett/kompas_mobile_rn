@@ -9,7 +9,7 @@ class abcrn123 extends Component {
 
   render() {
     return (
-      <AppNavigator initialRoute={{ident: 'Landing'}} />
+      <AppNavigator initialRoute={{ident: 'SignUp'}} />
     )
   }
 }

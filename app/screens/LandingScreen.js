@@ -19,25 +19,32 @@ class LandingScreen extends Component {
         <StatusBarBackground />
         <View style={{flex: 8}}>
           <Swiper
-            dot={<View style={{backgroundColor:'#fff', width: 8, height: 8,borderRadius: 10, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3}} />}
-            activeDot={<View style={{backgroundColor: '#fff', width: 13, height: 13, borderRadius: 7, marginLeft: 7, marginRight: 7}} />}
-            height={400}>
+            dot={<View style={styles.swiperDot} />}
+            activeDot={<View style={styles.activeDot} />}>
             <View style={styles.swiperSlide}>
-              <Text style={styles.swiperSlideText}>KOMPAS</Text>
-              <Text style={styles.swiperSlideText}>THE WORLDS URBAN JUNGLE</Text>
+              <View style={{ marginTop: 180 }}>
+                <Text style={styles.swiperSlideText}>KOMPAS</Text>
+                <Text style={styles.swiperSlideText}>THE WORLDS URBAN JUNGLE</Text>
+              </View>
             </View>
-            <View style={[styles.swiperSlide, { padding: 5 }]}>
-              <Text style={styles.swiperSlideText}>KOMPAS Learns about you</Text>
-              <Text style={styles.swiperSlideText}>through machine learning</Text>
+            <View style={[styles.swiperSlide, { paddingLeft: 5, paddingRight: 5 }]}>
+              <View style={{ marginTop: 180 }}>
+                <Text style={styles.swiperSlideText}>KOMPAS Learns about you</Text>
+                <Text style={styles.swiperSlideText}>through machine learning</Text>
+              </View>
             </View>
             <View style={styles.swiperSlide}>
-              <Text style={styles.swiperSlideText}>KOMPAS builds itineraries</Text>
-              <Text style={styles.swiperSlideText}>based on your interests</Text>
+              <View style={{ marginTop: 180 }}>
+                <Text style={styles.swiperSlideText}>KOMPAS builds itineraries</Text>
+                <Text style={styles.swiperSlideText}>based on your interests</Text>
+              </View>
             </View>
             <View style={styles.swiperSlide}>
-              <Text style={styles.swiperSlideText}>So let's get you on your</Text>
-              <Text style={styles.swiperSlideText}>way to exploring the</Text>
-              <Text style={[styles.swiperSlideText, { fontWeight: '600' }]}>World's Urban Jungles</Text>
+              <View style={{ marginTop: 180 }}>
+                <Text style={styles.swiperSlideText}>So let's get you on your</Text>
+                <Text style={styles.swiperSlideText}>way to exploring the</Text>
+                <Text style={[styles.swiperSlideText, { fontWeight: '600' }]}>World's Urban Jungles</Text>
+              </View>
             </View>
           </Swiper>
         </View>
@@ -68,7 +75,7 @@ const styles = StyleSheet.create({
   swiperSlide: {
     flex: 1,
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     padding: 30
   },
@@ -94,6 +101,27 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     fontSize: 18,
     color: 'white'
+  },
+
+  swiperDot: {
+    backgroundColor:'#fff',
+    width: 8,
+    height: 8,
+    borderRadius: 10, 
+    marginLeft: 3, 
+    marginRight: 3, 
+    marginTop: 3, 
+    marginBottom: 200
+  },
+
+  activeDot: {
+    backgroundColor: '#fff', 
+    width: 13, 
+    height: 13, 
+    borderRadius: 7, 
+    marginLeft: 7, 
+    marginRight: 7,
+    marginBottom: 200
   }
 
 });
