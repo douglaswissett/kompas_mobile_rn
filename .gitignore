@@ -24,6 +24,10 @@ project.xcworkspace
 
 # Android/IJ
 #
+<<<<<<< HEAD
+=======
+*.iml
+>>>>>>> 7dc460d520e68eeba479320222b61e1b31285873
 .idea
 .gradle
 local.properties
@@ -32,3 +36,12 @@ local.properties
 #
 node_modules/
 npm-debug.log
+<<<<<<< HEAD
+=======
+
+# BUCK
+buck-out/
+\.buckd/
+android/app/libs
+android/keystores/debug.keystore
+>>>>>>> 7dc460d520e68eeba479320222b61e1b31285873
